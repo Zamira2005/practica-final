@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,800,900" rel="stylesheet">
+</head>
+<body>
+    <nav id="menuh">
+            <ul>
+                <li><a href="file:///C:/Users/Zamira/OneDrive/Practica%20final/index.html">Inicio</a></li>
+                <li><a href="file:///C:/Users/Zamira/OneDrive/Practica%20final/somos.html">Quienes Somos</a>
+                
+
+                
+                </li>
+                <li><a href="file:///C:/Users/Zamira/OneDrive/Practica%20final/producto.html">Productos</a>
+                    <ul class="submenu">
+                        <li><a href="file:///C:/Users/Zamira/OneDrive/Practica%20final/ropas.html">Ropas</a></li>
+                        <li><a href="file:///C:/Users/Zamira/OneDrive/Practica%20final/ropas.html">Accesorios</a></li>
+                    </ul>
+                    </li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Garantia</a></li>
+   
+
+
+            </ul>
+        </nav>
+
+
+<br><br><br>
+    <form action="">
+        <div class="form">
+            <h1>Contactos Forever 21</h1>
+            <div class="grupo">
+                <input type="text" name="" id="" required><span class="barra"></span>
+                <label>Nombre</label>
+            </div>
+            <div class="grupo">
+                <input type="email" name="" id="" required><span class="barra"></span>
+                <label>Email</label>
+            </div>
+            <div class="grupo">
+                <input type="number" name="" id="" required><span class="barra"></span>
+                <label>Edad</label>
+            </div>
+            <div class="grupo">
+                <textarea name="" id="" rows="3" required></textarea><span class="barra"></span>
+                <label>Mensaje</label>
+            </div>
+        </div>
+    </form>
+<br><br><br>
+
+    <style>
+        :root{
+    --colorTextos: #49454567;
+}
+
+/*
+Web hecha con AlexCG Design, si te sirvió la plantilla por favor entra a AlexCG Design
+        esta plantilla es libre para usar, así como otras plantillas más que tenemos en el canal...
+        ->>>> https://www.youtube.com/alexcgdesign <<<<-
+*/
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FC5C7D;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6A82FB, #FC5C7D);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height:650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 800;
+}
+
+form{
+    background: #fff;
+    width: 30%;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    margin-top: 120px;
+    margin-left: -550px;
+}
+
+
+.form{
+    width: 100%;
+    margin: auto;
+}
+
+form .grupo{
+    position: relative;
+    margin: 45px;
+}
+
+input, textarea{
+    background: none;
+    color:#c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border:none;
+    border-bottom: 1px solid var(--colorTextos);
+    resize: none;
+}
+
+input:focus,textarea:focus{
+    outline: none;
+    color: rgb(94,93,93);
+}
+
+input:focus~label, 
+input:valid~label, 
+textarea:focus~label, textarea:valid~label{
+    position: absolute;
+    top: -14px;
+    font-size: 12px;
+    color: #2196F3;
+}
+
+label{
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top:10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+
+input:focus~.barra::before, textarea:focus~.barra::before{
+    width: 100%;
+}
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.barra::before{
+    content: '';
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #6A82FB, #FC5C7D);
+    transition: 0.3s ease all;
+    left: 0%;
+}
+
+@media screen and (max-width:1100px){
+    form{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:600px){
+    form{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:450px){
+    form{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:300px){
+    form{
+        width: 90%;
+    }
+}
+
+#menuh{
+    max-width: 1000px;
+    min-height: 50px;
+    margin-top: -580px;
+    margin-left: -80px;
+
+}
+
+#menuh ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#menuh a{
+    color: white;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    background: #87CEFA ;
+    font-family: italic;
+    font-size: 25px;
+}
+
+
+#menuh a:hover{
+background: gray;
+}
+
+#menuh ul ul {
+    display: none;
+}
+
+#menuh ul li:hover ul{
+    display: block;
+}
+    </style>
+</body>
+</html>
